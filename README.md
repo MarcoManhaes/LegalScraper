@@ -11,17 +11,56 @@ Repositório destinado à prova de conceito para projetos de web crawler e scrap
 
 > Repositório destinado à prova de conceito para projetos de web crawler e scraper.
 
-## Usage
+## Status
+
+Em Desenvolvimento ⚠️
+
+
+## Execução
 
 ```sh
-Por linha de comando, no diretório raiz do projeto (onde está localizada a solution)execute o comando dotnet build.
+Baixar o projeto em uma estação local.
+
+Utilizando o Visual studio:
+Abra a Solution contendo o conjunto de projetos (camadas) que integram o projeto como um todo Legal Scraper, 
+compile a solution e rode o projeto com F5 ou Ctrl +F5 (Debug)
+
+Utilizando linha de comando:
+No diretório raiz do projeto (onde está localizada a solution)execute o comando dotnet build.
 Após a compilação sem erros, entre no riretório do projeto LegalScraper.Client execute o comando dotnet run.
 ```
 
-## Run tests
+## Como usar
+> ### Pre Requisitos
+>   É necessário que a estação que executará o projeto contenha o Microsoft .NET Core SDK 3.1 instalado.
+
+>   Caso deseja rodar o projeto em modo debug e analizar o código fonte com maiores detalhes, 
+>   é necessário ter o Visual studio (preferencialmente 2019) ou VS Code instalados.
+
+> ### Local de arquivos
+> Existem dois arquivos importantes gerados durante a execução do projetosão eles: [nome_base_dados].sqlite e [nome_log].txt
+
+> Base de dados:  a base de dados é gerada com o onome legal_scraper_db.sqlite no diretório:
+Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LegalScraper.Application");
+
+> Arq uivo de log: o arquivo de log é gerado com o nome no formato {0:yyyyMMdd}_{1}.log (Ex: 20220713_LegalScraper.log) no diretório:
+Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "Logs");
+
+## Tecnologias utilizadas
 
 ```sh
-dotnet run
+* Microsoft.NetCore
+* Console application Core
+* Asp.net Core
+* Dependency Injection
+* Entity Framework Core
+* Fluent Migration
+* Swashbuckle Swagger
+* Newtonsoft.json
+* Sqlite
+* Selenium
+* Unity
+* NLog
 ```
 
 ## Author
