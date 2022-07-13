@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegalScraper.Client", "LegalScraper.Client\LegalScraper.Client.csproj", "{66E57989-D863-46E2-A736-4051EBE9BA34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LegalScraper.Domain", "LegalScraper.Domain\LegalScraper.Domain.csproj", "{5F07B6E1-6110-4C8D-A701-8CA8E7A7B3F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegalScraper.Service", "LegalScraper.Service\LegalScraper.Service.csproj", "{EFC02570-D050-4E90-BAB8-68E2FC7EE961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegalScraper.IoC", "LegalScraper.IoC\LegalScraper.IoC.csproj", "{67BA7C70-E10D-43E9-90AA-96879E25021A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegalScraper.Utility", "LegalScraper.Utility\LegalScraper.Utility.csproj", "{C171F411-DE40-4A9C-9774-E44622DF5B1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E57989-D863-46E2-A736-4051EBE9BA34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E57989-D863-46E2-A736-4051EBE9BA34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E57989-D863-46E2-A736-4051EBE9BA34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E57989-D863-46E2-A736-4051EBE9BA34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F07B6E1-6110-4C8D-A701-8CA8E7A7B3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F07B6E1-6110-4C8D-A701-8CA8E7A7B3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F07B6E1-6110-4C8D-A701-8CA8E7A7B3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F07B6E1-6110-4C8D-A701-8CA8E7A7B3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC02570-D050-4E90-BAB8-68E2FC7EE961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC02570-D050-4E90-BAB8-68E2FC7EE961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC02570-D050-4E90-BAB8-68E2FC7EE961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC02570-D050-4E90-BAB8-68E2FC7EE961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67BA7C70-E10D-43E9-90AA-96879E25021A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67BA7C70-E10D-43E9-90AA-96879E25021A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67BA7C70-E10D-43E9-90AA-96879E25021A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67BA7C70-E10D-43E9-90AA-96879E25021A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C171F411-DE40-4A9C-9774-E44622DF5B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C171F411-DE40-4A9C-9774-E44622DF5B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C171F411-DE40-4A9C-9774-E44622DF5B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C171F411-DE40-4A9C-9774-E44622DF5B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6739017-E544-4867-8F87-E3C4A85CB49C}
+	EndGlobalSection
+EndGlobal

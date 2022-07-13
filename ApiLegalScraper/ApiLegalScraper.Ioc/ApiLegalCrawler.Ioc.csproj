@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiLegalScraper.Data\ApiLegalScraper.Data.csproj" />
+    <ProjectReference Include="..\ApiLegalScraper.Domain\ApiLegalScraper.Domain.csproj" />
+    <ProjectReference Include="..\ApiLegalScraper.Service\ApiLegalScraper.Service.csproj" />
+  </ItemGroup>
+
+</Project>
