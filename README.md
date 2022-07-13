@@ -1,7 +1,6 @@
 # LegalScraper
 Repositório destinado à prova de conceito para projetos de web crawler e scraper.
 
-<h1 align="center">Welcome to Legal Scraper 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version- 1.1.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://twitter.com/MarcoManhaes" target="_blank">
@@ -27,6 +26,11 @@ Todo o processo de execução e fluxo foi registrado em LOG e salvo em arquivo c
 
 Não existe interação do usuário para entrada de dados!
 Serão consultados no site do Tribunal de Justiça da Bahía, 5 (cinco) números de processos, onde os mesmos estaão 'mokados' na aplicação e seus dados são buscados automaticamente sem que o usuário precise informá-los, e após o termino da execução a aplicação é fechada.
+
+
+## Execução
+> Fluxo simplificado de execução:
+> (1) App inicializa --> (2) cria/atualiza base dados --> (3) realiza crawling do processo --> (4) realiza scraping do processo --> (5) consome Api Legal Scraper (Create - Processo) --> (6) persiste dados em banco --> (7) consome Aapi Legal Scraper (Get Processo/List) --> (8) realiza scraping de movimentações do processo --> (9) consome Aapi Legal Scraper (Create - Movimentacao) --> (10) persiste dados em banco --> (11) consome Aapi Legal Scraper (Get - Movimentacao/List) --> (12) repete os passos (3) à (11) enquanto houver processos para pesquisa --> (13) consome Aapi Legal Scraper (Get - Processo/List) --> (14) seleciona um processo na lista e consome Aapi Legal Scraper (Get - Processo/{id}) - (15) utiliza o processo selecionado com o filtro de id e consome Aapi Legal Scraper (Update - Processo) --> (16) consome a API Legal Scraper (List - Processo/List) afim de mostrar a lista atualizada --> (17) consome a API Legal Scraper (Delete - Processo/{id}) --> (18) consome a API Legal Scraper (List - Processo/List) afim de mostrar a lista sem o registro excluído --> (19) abre o arquivo de log --> fecha a aplicação
 
 ## Execução
 
@@ -75,7 +79,7 @@ Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "Logs"
 * NLog
 ```
 
-## Author
+## Autor
 
 👤 **Marco Manhães Júnior**
 
@@ -83,9 +87,8 @@ Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "Logs"
 * Github: [@MarcoManhaes](https://github.com/MarcoManhaes)
 * LinkedIn: [@marco-manhaes](https://linkedin.com/in/marco-manhaes)
 
-## Show your support
+## Mostre seu apoio
 
-Give a ⭐️ if this project helped you!
+Dê um ⭐️ se esse projeto te ajudou!
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
