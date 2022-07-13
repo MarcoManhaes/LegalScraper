@@ -17,16 +17,16 @@ Em Desenvolvimento ⚠️
 
 ## Sobre
 
-Este projeto tem como objetivo principal realizar a prova de conceito para um projeto de web crawling e scraping, onde a aplicação rastreia o site do Tribunal de Justiça da Bahía, realiza a pesquisa de processos e posteriormente a raspagem dos dados do mesmo, bem como os dados das movimentações destes processos.
+Este projeto tem como objetivo principal realizar a prova de conceito de web crawling e scraping, no qual a aplicação rastreia o site do Tribunal de Justiça da Bahía, realiza a pesquisa de processos e, posteriormente, a raspagem dos dados do mesmo, bem como os dados das movimentações destes processos.
 Para o processo de crawling e scraping foi utilizada a ferramenta Selenium, agregada ao projeto.
 
-Os dados estraídos são estruturados em memória pela aplicação que consome uma API (ApiLegalScraper) que persiste estes dados estruturados em uma base de dados Sqlite utilizando a tecnologia Entity Framework Core.
+Os dados extraídos são estruturados em memória pela aplicação que consome uma API (ApiLegalScraper), que persiste estes dados estruturados em uma base Sqlite, utilizando a tecnologia Entity Framework Core.
 Este banco de dados Sqlite é gerado e autogerenciado pela aplicação através da tecnologia Fluent Migration, que tem como principal objetivo o versionamento do mesmo através de scripts e mapeamentos. (A Geração do banco é realizada na primeira execução da aplicação).
 
 Todo o processo de execução e fluxo foi registrado em LOG e salvo em arquivo cujo caminho está especificado abaixo neste README.
 
 Não existe interação do usuário para entrada de dados!
-Serão consultados no site do TJ Bahía, 5 números de processos, onde os mesmos estaão 'mokados' na aplicação e seus dados são são buscados automaticamente sem que o usuário precise informá-los e após o termino da execução a apricação é fechada.
+Serão consultados no site do Tribunal de Justiça da Bahía, 5 (cinco) números de processos, onde os mesmos estaão 'mokados' na aplicação e seus dados são buscados automaticamente sem que o usuário precise informá-los, e após o termino da execução a aplicação é fechada.
 
 ## Execução
 
@@ -43,19 +43,19 @@ Após a compilação sem erros, entre no riretório do projeto LegalScraper.Clie
 ```
 
 ## Como usar
-> ### Pre Requisitos
+> ### Pré-Requisitos
 >   É necessário que a estação que executará o projeto contenha o Microsoft .NET Core SDK 3.1 instalado.
 
 >   Caso deseja rodar o projeto em modo debug e analizar o código fonte com maiores detalhes, 
 >   é necessário ter o Visual studio (preferencialmente 2019) ou VS Code instalados.
 
 > ### Local de arquivos
-> Existem dois arquivos importantes gerados durante a execução do projetosão eles: [nome_base_dados].sqlite e [nome_log].txt
+> Existem dois arquivos importantes gerados durante a execução do projeto, são eles: [nome_base_dados].sqlite e [nome_log].txt
 
-> Base de dados:  a base de dados é gerada com o onome legal_scraper_db.sqlite no diretório:
+> Base de dados:  a base de dados é gerada com o nome legal_scraper_db.sqlite no diretório:
 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LegalScraper.Application");
 
-> Arq uivo de log: o arquivo de log é gerado com o nome no formato {0:yyyyMMdd}_{1}.log (Ex: 20220713_LegalScraper.log) no diretório:
+> Arquivo de log: o arquivo de log é gerado com o nome no formato {0:yyyyMMdd}_{1}.log (Ex: 20220713_LegalScraper.log) no diretório:
 Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), "Logs");
 
 ## Tecnologias utilizadas
