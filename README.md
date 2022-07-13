@@ -23,6 +23,10 @@ Para o processo de crawling e scraping foi utilizada a ferramenta Selenium, agre
 Os dados estraídos são estruturados em memória pela aplicação que consome uma API (ApiLegalScraper) que persiste estes dados estruturados em uma base de dados Sqlite utilizando a tecnologia Entity Framework Core.
 Este banco de dados Sqlite é gerado e autogerenciado pela aplicação através da tecnologia Fluent Migration, que tem como principal objetivo o versionamento do mesmo através de scripts e mapeamentos. (A Geração do banco é realizada na primeira execução da aplicação).
 
+Todo o processo de execução e fluxo foi registrado em LOG e salvo em arquivo cujo caminho está especificado abaixo neste README.
+
+Não existe interação do usuário para entrada de dados!
+Serão consultados 5 processos, onde os mesmos estaão 'Mokados' na aplicação e são buscados automaticamente e a aplicação fechada após o termino da execução.
 
 ## Execução
 
