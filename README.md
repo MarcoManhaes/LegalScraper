@@ -26,7 +26,7 @@ Este banco de dados Sqlite é gerado e autogerenciado pela aplicação através 
 Todo o processo de execução e fluxo foi registrado em LOG e salvo em arquivo cujo caminho está especificado abaixo neste README.
 
 Não existe interação do usuário para entrada de dados!
-Serão consultados 5 processos, onde os mesmos estaão 'Mokados' na aplicação e são buscados automaticamente e a aplicação fechada após o termino da execução.
+Serão consultados no site do TJ Bahía, 5 números de processos, onde os mesmos estaão 'mokados' na aplicação e seus dados são são buscados automaticamente sem que o usuário precise informá-los e após o termino da execução a apricação é fechada.
 
 ## Execução
 
