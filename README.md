@@ -15,6 +15,14 @@ Repositório destinado à prova de conceito para projetos de web crawler e scrap
 
 Em Desenvolvimento ⚠️
 
+## Sobre
+
+Este projeto tem como objetivo principal realizar a prova de conceito para um projeto de web crawling e scraping, onde a aplicação rastreia o site do Tribunal de Justiça da Bahía, realiza a pesquisa de processos e posteriormente a raspagem dos dados do mesmo, bem como os dados das movimentações destes processos.
+Para o processo de crawling e scraping foi utilizada a ferramenta Selenium, agregada ao projeto.
+
+Os dados estraídos são estruturados em memória pela aplicação que consome uma API (ApiLegalScraper) que persiste estes dados estruturados em uma base de dados Sqlite utilizando a tecnologia Entity Framework Core.
+Este banco de dados Sqlite é gerado e autogerenciado pela aplicação através da tecnologia Fluent Migration, que tem como principal objetivo o versionamento do mesmo através de scripts e mapeamentos. (A Geração do banco é realizada na primeira execução da aplicação).
+
 
 ## Execução
 
