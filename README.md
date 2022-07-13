@@ -14,7 +14,8 @@ Repositório destinado à prova de conceito para projetos de web crawler e scrap
 ## Usage
 
 ```sh
-dotnet build e depois  o comando dotnet run
+Por linha de comando, no diretório raiz do projeto (onde está localizada a solution)execute o comando dotnet build.
+Após a compilação sem erros, entre no riretório do projeto LegalScraper.Client execute o comando dotnet run.
 ```
 
 ## Run tests
