@@ -16,7 +16,7 @@ Em Desenvolvimento ⚠️
 
 ## Sobre
 
-Este projeto tem como objetivo principal realizar a prova de conceito de web crawling e scraping, no qual a aplicação rastreia o site do Tribunal de Justiça da Bahía, realiza a pesquisa de processos e, posteriormente, a raspagem dos dados do mesmo, bem como os dados das movimentações destes processos.
+Este projeto tem como objetivo principal realizar a prova de conceito de web crawling e scraping, no qual a aplicação rastreia o site do Tribunal de Justiça da Bahía, realiza a pesquisa de processos e suas movimentações e, posteriormente, a raspagem dos dados do mesmo, bem como os dados das movimentações destes processos.
 Para o processo de crawling e scraping foi utilizada a ferramenta Selenium, agregada ao projeto.
 
 Os dados extraídos são estruturados em memória pela aplicação que consome uma API (ApiLegalScraper), que persiste estes dados estruturados em uma base Sqlite, utilizando a tecnologia Entity Framework Core.
